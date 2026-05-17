@@ -1,0 +1,2 @@
+# QA Engineer || QA Automation
+QA Engineer with 1+ year of experience in manual testing and 3 years of experience as a Web Developer specializing in PHP. Passionate about improving software quality through efficient testing strategies and automation.
