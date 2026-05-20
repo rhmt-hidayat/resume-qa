@@ -121,7 +121,7 @@
                 }
             }
         </style>
-        <title>Portofolio</title>
+        <title>Resume</title>
     </head>
 
     <body>
@@ -200,8 +200,13 @@
                                 <a
                                     href="https://github.com/rhmt-hidayat"
                                     target="_blank"
-                                    class="btn btn-outline-dark btn-sm mb-2"><img src="image/git.png" style="width:20px;vertical-align:middle;">
+                                    class="btn btn-outline-dark btn-sm mr-2 mb-2"><img src="image/git.png" style="width:20px;vertical-align:middle;">
                                     GitHub</a>
+                                <a
+                                    href="https://rhmt-hidayat.github.io/resume-qa/cv-ats.pdf"
+                                    target="_blank"
+                                    class="btn btn-outline-secondary btn-sm mb-2"><img src="image/download.png" style="width:20px;vertical-align:middle;">
+                                    View CV</a>
                             </div>
                         </div>
                     </div>
@@ -288,7 +293,7 @@
                                         <ul class="pl-3 mb-0">
                                             <li>Developed MRP systems using PHP CodeIgniter with database validation and workflow integrity.</li>
                                             <li>Performed query optimization, debugging, and backend validation testing.</li>
-                                            <li>Built working ticket and employee monitoring systems for operational workflows.</li>
+                                            <li>Developed working ticket and employee monitoring systems for operational workflows.</li>
                                             <li>Developed responsive company portal systems using WordPress.</li>
 											<li>Analyzed operational business requirements and translated them into technical implementations.</li>
                                         </ul>
@@ -488,8 +493,18 @@
                                         alt="Selenium Allure Report"
                                         style="cursor:pointer;">
                                     <div class="card-body">
-                                        <h5 class="card-title font-weight-bold"><a href="https://test.coresyssap.com/" target="_blank">Automation Testing - Coresys</a></h5>
-                                        <p class="card-text text-secondary">Tools: Python, Selenium POM, Pytest, Allure Report</p>
+                                        <h5 class="card-title font-weight-bold">
+                                            <a href="https://test.coresyssap.com/" target="_blank">Automation Testing - Coresys</a>
+                                        </h5>
+                                        <p class="card-text text-secondary">
+                                            Tools: Python, Selenium POM, Pytest, Allure Report
+                                        </p>
+                                        <button
+                                            class="btn btn-primary btn-sm"
+                                            data-toggle="modal"
+                                            data-target="#seleniumModal">
+                                            View Detail
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -533,15 +548,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="col-md-4 mb-4">
-                                <div class="card border-0 shadow-sm h-100">
-                                    <img src="image/sina-dc.png" class="card-img-top preview-image" alt="Document Control" style="cursor:pointer;">
-                                    <div class="card-body">
-                                        <h5 class="card-title font-weight-bold"><a href="https://sina-dc.com/" target="_blank">Aplikasi Document Control PT. Schlemmer Automotive Indonesia</a></h5>
-                                        <p class="card-text text-secondary">Tools: Bootstrap, CSS, Javascript, PHP, Mysql (Codeigniter)</p>
-                                    </div>
-                                </div>
-                            </div> -->
                             <div class="col-md-4 mb-4">
                                 <div class="card border-0 shadow-sm h-100">
                                     <img src="image/working-ticket.png" class="card-img-top preview-image" alt="Working Ticket" style="cursor:pointer;">
@@ -560,29 +566,6 @@
                                     </div>
                                 </div>
                             </div>
-                            <!-- <div class="col-md-4 mb-4">
-                                <div class="card border-0 shadow-sm h-100">
-                                    <img
-                                        src="image/kumbung_jamur.jpg"
-                                        class="card-img-top preview-image"
-                                        alt="Kumbung Jamur"
-                                        style="object-fit:cover;height:200px;cursor:pointer;">
-                                    <div class="card-body">
-                                        <h5 class="card-title font-weight-bold"><a href="https://kumbungjamur.com/" target="_blank">Sistem Kendali Kumbung Jamur untuk
-                                            memonitoring suhu, kelembapan, cahaya dan kadar gas</a></h5>
-                                        <p class="card-text text-secondary">Tools: Arduino Uno, dht22, ldr, mq135, relay (Internet of Things).</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 mb-4">
-                                <div class="card border-0 shadow-sm h-100">
-                                    <img src="image/webjamur.png" class="card-img-top preview-image" alt="Web Jamur" style="cursor:pointer;">
-                                    <div class="card-body">
-                                        <h5 class="card-title font-weight-bold"><a href="https://webjamur.com/" target="_blank">Sistem Monitoring Kumbung Jamur</a></h5>
-                                        <p class="card-text text-secondary">Tools: Bootstrap, CSS, Javascript, PHP, Mysql (Native)</p>
-                                    </div>
-                                </div>
-                            </div> -->
                         </div>
                     </div>
                 </div>
@@ -650,7 +633,7 @@
         Panitia penyelenggaraan acara LDKM (Latihan Dasar Kepemimpinan Mahasiswa) tahun
         2018 <br> </dd> </dl> </div> </section> -->
 
-        <!-- MODAL PORTOFOLIO PROJECT -->
+        <!-- MODAL IMAGE PROJECT -->
         <div class="modal fade" id="imageModal" tabindex="-1">
             <div class="modal-dialog modal-xl modal-dialog-centered">
                 <div class="modal-content border-0 bg-transparent">
@@ -658,6 +641,57 @@
                 </div>
             </div>
         </div>
+        <!-- END MODAL -->
+
+        <!-- MODAL DETAIL PROJECT -->
+         <div class="modal fade" id="seleniumModal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Coresys Automation Testing Framework
+                        </h5>
+                        <button type="button"
+                                class="close"
+                                data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="image/Selenium_Allure-Report.png"
+                            class="img-fluid rounded mb-3">
+                        <p>
+                            Selenium Python automation framework using
+                            POM architecture with Pytest and Allure Report integration.
+                        </p>
+                        <a href="https://github.com/rhmt-hidayat/Selenium_Coresys" target="_blank" class="btn btn-outline-info btn-sm mb-3">
+                            <img src="image/git.png" style="width:20px;vertical-align:middle;">
+                            Source Repository
+                        </a>
+                        <h6 class="font-weight-bold">
+                            Features :
+                        </h6>
+                        <ul>
+                            <li>Login Coresys</li>
+                            <li>Create Form Input Credit</li>
+                            <li>Form Upload</li>
+                            <li>Screenshot on failure</li>
+                            <li>Reusable Base Page</li>
+                            <li>Logging integration</li>
+                            <li>Validation Assertions</li>
+                        </ul>
+                        <h6 class="font-weight-bold">
+                            Tech Stack :
+                        </h6>
+                        <p>
+                            Python • Selenium • Explicit Wait • ChromeDriver • Pytest • Allure Report
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+         <!-- END MODAL -->
 
         <footer class="bg-light text-secondary border-top">
             <div class="container">
