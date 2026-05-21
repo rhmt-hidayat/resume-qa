@@ -35,7 +35,7 @@
                 overflow: hidden;
                 object-fit: cover;
             }
-            .zoom-without-container {
+            /*.zoom-without-container {
                 transition: transform 0.2s;
                 margin: 0 auto;
             }
@@ -45,7 +45,7 @@
             }
             .zoom-without-container:hover {
                 transform: scale(7.5);
-            }
+            } */
             #scroll-btn {
                 display: none;
                 position: fixed;
@@ -154,7 +154,7 @@
                             <a class="nav-link" href="#skill">Skills</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#portofolio">Portofolio</a>
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
                         </li>
                         <!-- <li class="nav-item">
                             <a class="nav-link" href="#training">Certification & Training</a>
@@ -263,7 +263,7 @@
                                             <li>Validated backend data integrity using SQL queries.</li>
                                             <li>Identified critical defects before production releases.</li>
                                             <li>Collaborated with developers during feature validation and bug fixing.</li>
-											<li>Developed Selenium Python automation scripts for repetitive testing scenarios.</li>
+											<li>Implemented Selenium Python automation scripts to reduce repetitive regression testing efforts.</li>
 											<li>Managed test cases, bug reports, and testing documentation.</li>
 										</ul>
                                     </div>
@@ -326,7 +326,7 @@
                 <div class="row justify-content-center">
                     <div class="col-lg-8">
                         <div class="text-center mb-4">
-                            <h2 class="display-4 font-weight-bold text-info">Pendidikan</h2>
+                            <h2 class="display-4 font-weight-bold text-info">Education</h2>
                             <hr class="w-25 mx-auto mb-4" style="border-top:2px solid #17a2b8;">
                         </div>
                         <div class="card border-0 shadow-sm p-4">
@@ -338,7 +338,7 @@
                                     height="64"
                                     alt="UBP Logo">
                                 <div class="media-body">
-                                    <h5 class="mb-1 text-info font-weight-bold">Teknik Informatika</h5>
+                                    <h5 class="mb-1 text-info font-weight-bold">Bachelor of Informatics Engineering</h5>
                                     <h6 class="mb-1">Universitas Buana Perjuangan Karawang
                                         <span class="text-muted">(2016 - 2020)</span></h6>
                                     <p class="mb-0">Karawang, Jawa Barat</p>
@@ -476,12 +476,12 @@
             </div>
         </section>
         <br>
-        <section id="portofolio" class="portfolio bg-light pb-5 mb-n5">
+        <section id="portfolio" class="portfolio bg-light pb-5 mb-n5">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-lg-10">
                         <div class="text-center mb-4">
-                            <h2 class="display-4 font-weight-bold text-info">Portofolio</h2>
+                            <h2 class="display-4 font-weight-bold text-info">Portfolio</h2>
                             <hr class="w-25 mx-auto mb-4" style="border-top:2px solid #17a2b8;">
                         </div>
                         <div class="row">
@@ -496,9 +496,10 @@
                                         <h5 class="card-title font-weight-bold">
                                             <a href="https://test.coresyssap.com/" target="_blank">Automation Testing - Coresys</a>
                                         </h5>
-                                        <p class="card-text text-secondary">
+                                        <!-- <p class="card-text text-secondary">
                                             Tools: Python, Selenium POM, Pytest, Allure Report
-                                        </p>
+                                        </p> -->
+                                        <p><i class="fa fa-info-circle">Click info to see details</i></p>
                                         <button
                                             class="btn btn-primary btn-sm"
                                             data-toggle="modal"
@@ -517,7 +518,14 @@
                                         style="cursor:pointer;">
                                     <div class="card-body">
                                         <h5 class="card-title font-weight-bold"><a href="http://apps_kurirkita.local/" target="_blank">Agregator system - Ticketing module</a></h5>
-                                        <p class="card-text text-secondary">Tools: HTML (bootstrap), CSS, Javascript, PHP (Codeigniter), MySQL, Rest API</p>
+                                        <!-- <p class="card-text text-secondary">Tools: HTML (bootstrap), CSS, Javascript, PHP (Codeigniter), MySQL, Rest API</p> -->
+                                        <p><i class="fa fa-info-circle">Click info to see details</i></p>
+                                        <button
+                                            class="btn btn-primary btn-sm"
+                                            data-toggle="modal"
+                                            data-target="#kurirkitaModal">
+                                            View Detail
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -526,7 +534,14 @@
                                     <img src="image/kartu-diskon.png" class="card-img-top preview-image" alt="Kartu Diskon" style="cursor:pointer;">
                                     <div class="card-body">
                                         <h5 class="card-title font-weight-bold"><a href="http://support-kartudiskon.local/" target="_blank">Application discount card</a></h5>
-                                        <p class="card-text text-secondary">Tools: HTML (bootstrap), CSS, Javascript, PHP (Codeigniter), MySQL, Rest API</p>
+                                        <!-- <p class="card-text text-secondary">Tools: HTML (bootstrap), CSS, Javascript, PHP (Codeigniter), MySQL, Rest API</p> -->
+                                        <p><i class="fa fa-info-circle">Click info to see details</i></p>
+                                        <button
+                                            class="btn btn-primary btn-sm"
+                                            data-toggle="modal"
+                                            data-target="#kartudiskonModal">
+                                            View Detail
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -535,7 +550,14 @@
                                     <img src="image/contact_list.png" class="card-img-top preview-image" alt="Performa Karyawan" style="cursor:pointer;">
                                     <div class="card-body">
                                         <h5 class="card-title font-weight-bold"><a href="http://sina_contact_list.local/" target="_blank">Application Employee Performance</a></h5>
-                                        <p class="card-text text-secondary">Tools: HTML (bootstrap), CSS, Javascript, PHP (Codeigniter), MySQL</p>
+                                        <!-- <p class="card-text text-secondary">Tools: HTML (bootstrap), CSS, Javascript, PHP (Codeigniter), MySQL</p> -->
+                                        <p><i class="fa fa-info-circle">Click info to see details</i></p>
+                                        <button
+                                            class="btn btn-primary btn-sm"
+                                            data-toggle="modal"
+                                            data-target="#contactlistModal">
+                                            View Detail
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -544,7 +566,14 @@
                                     <img src="image/mrp2.png" class="card-img-top preview-image" alt="MRP" style="cursor:pointer;">
                                     <div class="card-body">
                                         <h5 class="card-title font-weight-bold"><a href="http://sina_mrp_v2.local/" target="_blank">Application MRP</a></h5>
-                                        <p class="card-text text-secondary">Tools: Bootstrap, CSS, Javascript, PHP, Mysql (Codeigniter)</p>
+                                        <!-- <p class="card-text text-secondary">Tools: Bootstrap, CSS, Javascript, PHP, Mysql (Codeigniter)</p> -->
+                                        <p><i class="fa fa-info-circle">Click info to see details</i></p>
+                                        <button
+                                            class="btn btn-primary btn-sm"
+                                            data-toggle="modal"
+                                            data-target="#mrpModal">
+                                            View Detail
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -553,7 +582,14 @@
                                     <img src="image/working-ticket.png" class="card-img-top preview-image" alt="Working Ticket" style="cursor:pointer;">
                                     <div class="card-body">
                                         <h5 class="card-title font-weight-bold"><a href="http://sina_working_ticket.local/" target="_blank">Application Working Ticket</a></h5>
-                                        <p class="card-text text-secondary">Tools: Bootstrap, CSS, Javascript, PHP, Mysql (Codeigniter)</p>
+                                        <!-- <p class="card-text text-secondary">Tools: Bootstrap, CSS, Javascript, PHP, Mysql (Codeigniter)</p> -->
+                                        <p><i class="fa fa-info-circle">Click info to see details</i></p>
+                                        <button
+                                            class="btn btn-primary btn-sm"
+                                            data-toggle="modal"
+                                            data-target="#workingticketModal">
+                                            View Detail
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -562,7 +598,14 @@
                                     <img src="image/eform.png" class="card-img-top preview-image" alt="Pengajuan Form" style="cursor:pointer;">
                                     <div class="card-body">
                                         <h5 class="card-title font-weight-bold"><a href="http://kmi_hrform.local/c_auth/login" target="_blank">Application Form Request</a></h5>
-                                        <p class="card-text text-secondary">Tools: Bootstrap, CSS, Javascript, PHP, Mysql (Codeigniter)</p>
+                                        <!-- <p class="card-text text-secondary">Tools: Bootstrap, CSS, Javascript, PHP, Mysql (Codeigniter)</p> -->
+                                        <p><i class="fa fa-info-circle">Click info to see details</i></p>
+                                        <button
+                                            class="btn btn-primary btn-sm"
+                                            data-toggle="modal"
+                                            data-target="#eformModal">
+                                            View Detail
+                                        </button>
                                     </div>
                                 </div>
                             </div>
@@ -644,7 +687,7 @@
         <!-- END MODAL -->
 
         <!-- MODAL DETAIL PROJECT -->
-         <div class="modal fade" id="seleniumModal" tabindex="-1">
+        <div class="modal fade" id="seleniumModal" tabindex="-1">
             <div class="modal-dialog modal-lg modal-dialog-centered">
                 <div class="modal-content">
                     <div class="modal-header">
@@ -685,13 +728,274 @@
                             Tech Stack :
                         </h6>
                         <p>
-                            Python • Selenium • Explicit Wait • ChromeDriver • Pytest • Allure Report
+                            Python • Selenium POM • Explicit Wait • ChromeDriver • Pytest • Allure Report
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-         <!-- END MODAL -->
+        <div class="modal fade" id="kurirkitaModal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Aggregator System - Ticketing Module
+                        </h5>
+                        <button type="button"
+                                class="close"
+                                data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="image/kurirkita-ticketing.png"
+                            class="img-fluid rounded mb-3">
+                        <p>
+                            Aggregator System - Ticketing Module with PHP Codeigniter.
+                        </p>
+                        <a href="" target="_blank" class="btn btn-outline-info btn-sm mb-3">
+                            <img src="image/git.png" style="width:20px;vertical-align:middle;">
+                            Source Repository
+                        </a>
+                        <h6 class="font-weight-bold">
+                            Features :
+                        </h6>
+                        <ul>
+                            <li>Dashboard Monitoring</li>
+                            <li>Create Ticket</li>
+                            <li>Chat complaint</li>
+                            <li>Upload proof of complaint</li>
+                        </ul>
+                        <h6 class="font-weight-bold">
+                            Tech Stack :
+                        </h6>
+                        <p>
+                            HTML (bootstrap) • CSS • Javascript • PHP (Codeigniter) • MySQL • Rest API
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="kartudiskonModal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Discount Card Application
+                        </h5>
+                        <button type="button"
+                                class="close"
+                                data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="image/kartu-diskon.png"
+                            class="img-fluid rounded mb-3">
+                        <p>
+                            Discount Card Application with PHP Codeigniter.
+                        </p>
+                        <a href="" target="_blank" class="btn btn-outline-info btn-sm mb-3">
+                            <img src="image/git.png" style="width:20px;vertical-align:middle;">
+                            Source Repository
+                        </a>
+                        <h6 class="font-weight-bold">
+                            Features :
+                        </h6>
+                        <ul>
+                            <li>Login Account</li>
+                            <li>CRUD Master Data</li>
+                            <li>Discount Card Transaction</li>
+                            <li>Profile Page</li>
+                        </ul>
+                        <h6 class="font-weight-bold">
+                            Tech Stack :
+                        </h6>
+                        <p>
+                            HTML (bootstrap) • CSS • Javascript • PHP (Codeigniter) • MySQL • Rest API
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="contactlistModal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Contact List Application
+                        </h5>
+                        <button type="button"
+                                class="close"
+                                data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="image/contact_list.png"
+                            class="img-fluid rounded mb-3">
+                        <p>
+                            Contact List Application with PHP Codeigniter.
+                        </p>
+                        <a href="https://github.com/rhmt-hidayat/SINA_Contact-List" target="_blank" class="btn btn-outline-info btn-sm mb-3">
+                            <img src="image/git.png" style="width:20px;vertical-align:middle;">
+                            Source Repository
+                        </a>
+                        <h6 class="font-weight-bold">
+                            Features :
+                        </h6>
+                        <ul>
+                            <li>Login Account</li>
+                            <li>CRUD Master Data</li>
+                            <li>Contact List Transaction</li>
+                            <li>Report Data</li>
+                        </ul>
+                        <h6 class="font-weight-bold">
+                            Tech Stack :
+                        </h6>
+                        <p>
+                            HTML (bootstrap) • CSS • Javascript • PHP (Codeigniter) • MySQL
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="mrpModal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            MRP Application
+                        </h5>
+                        <button type="button"
+                                class="close"
+                                data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="image/mrp2.png"
+                            class="img-fluid rounded mb-3">
+                        <p>
+                            MRP Application with PHP Codeigniter.
+                        </p>
+                        <a href="https://github.com/rhmt-hidayat/SINA_MRP-V2" target="_blank" class="btn btn-outline-info btn-sm mb-3">
+                            <img src="image/git.png" style="width:20px;vertical-align:middle;">
+                            Source Repository
+                        </a>
+                        <h6 class="font-weight-bold">
+                            Features :
+                        </h6>
+                        <ul>
+                            <li>Login Account</li>
+                            <li>CRUD Master Data</li>
+                            <li>Upload File Excel</li>
+                            <li>Forecast (Transaction)</li>
+                            <li>Report Data</li>
+                        </ul>
+                        <h6 class="font-weight-bold">
+                            Tech Stack :
+                        </h6>
+                        <p>
+                            HTML (bootstrap) • CSS • Javascript • PHP (Codeigniter) • MySQL
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="workingticketModal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            Working Ticket Application
+                        </h5>
+                        <button type="button"
+                                class="close"
+                                data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="image/working-ticket.png"
+                            class="img-fluid rounded mb-3">
+                        <p>
+                            Working Ticket Application with PHP Codeigniter.
+                        </p>
+                        <a href="https://github.com/rhmt-hidayat/SINA_Working-Ticket" target="_blank" class="btn btn-outline-info btn-sm mb-3">
+                            <img src="image/git.png" style="width:20px;vertical-align:middle;">
+                            Source Repository
+                        </a>
+                        <h6 class="font-weight-bold">
+                            Features :
+                        </h6>
+                        <ul>
+                            <li>Login Account</li>
+                            <li>CRUD Master Data</li>
+                            <li>Working Ticket Transaction</li>
+                            <li>Report Data</li>
+                        </ul>
+                        <h6 class="font-weight-bold">
+                            Tech Stack :
+                        </h6>
+                        <p>
+                            HTML (bootstrap) • CSS • Javascript • PHP (Codeigniter) • MySQL
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="eformModal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">
+                            HR-Form Application
+                        </h5>
+                        <button type="button"
+                                class="close"
+                                data-dismiss="modal">
+                            <span>&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <img
+                            src="image/eform.png"
+                            class="img-fluid rounded mb-3">
+                        <p>
+                            HR-Form Application with PHP Codeigniter.
+                        </p>
+                        <a href="https://github.com/rhmt-hidayat/KMI_HR-Form" target="_blank" class="btn btn-outline-info btn-sm mb-3">
+                            <img src="image/git.png" style="width:20px;vertical-align:middle;">
+                            Source Repository
+                        </a>
+                        <h6 class="font-weight-bold">
+                            Features :
+                        </h6>
+                        <ul>
+                            <li>Login User</li>
+                            <li>User Management</li>
+                            <li>CRUD Master Data</li>
+                            <li>Request Form</li>
+                            <li>Approve Form</li>
+                            <li>Report Data</li>
+                        </ul>
+                        <h6 class="font-weight-bold">
+                            Tech Stack :
+                        </h6>
+                        <p>
+                            HTML (bootstrap) • CSS • Javascript • PHP (Codeigniter) • MySQL
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL -->
 
         <footer class="bg-light text-secondary border-top">
             <div class="container">
