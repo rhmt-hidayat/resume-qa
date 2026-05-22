@@ -178,7 +178,7 @@
                     <div class="col-lg-6">
                         <div class="card border-0 bg-light p-4 shadow-sm">
                             <h1 class="display-4 font-weight-bold mb-2 text-info">Rahmat Hidayat</h1>
-                            <h3 class="lead mb-3 text-secondary">QA Engineer | QA Automation | Ex-Web Developer</h3>
+                            <h3 class="lead mb-3 text-dark">QA Engineer | QA Automation | Ex-Web Developer</h3>
                             <ul class="list-group list-group-flush">
                                 <li class="list-group-item bg-light"><img
                                     src="https://img.icons8.com/cotton/64/000000/uber-mobile-app.png"
@@ -202,11 +202,11 @@
                                     target="_blank"
                                     class="btn btn-outline-dark btn-sm mr-2 mb-2"><img src="image/git.png" style="width:20px;vertical-align:middle;">
                                     GitHub</a>
-                                <a
-                                    href="https://rhmt-hidayat.github.io/resume-qa/cv-ats.pdf"
-                                    target="_blank"
-                                    class="btn btn-outline-secondary btn-sm mb-2"><img src="image/download.png" style="width:20px;vertical-align:middle;">
-                                    View CV</a>
+                                <button class="btn btn-outline-success btn-sm mb-2"
+                                    data-toggle="modal"
+                                    data-target="#atsModal">
+                                    <img src="image/view.png" style="width:20px;vertical-align:middle;"> View CV
+                                </button>
                             </div>
                         </div>
                     </div>
@@ -226,7 +226,7 @@
                             <div class="row">
                                 <div class="justify-col-md-12 mb-3 mb-md-0">
                                     <!-- <h5 class="font-weight-bold text-info">Who am I?</h5> -->
-                                    <p class="text-secondary mb-1">QA Engineer with 1+ year of experience in manual
+                                    <p class="text-dark mb-1">QA Engineer with 1+ year of experience in manual
                                         testing and 3 years of experience as a Web Developer specializing in PHP
                                         (CodeIgniter & Laravel). Skilled in functional testing, API testing using
                                         Postman, SQL validation, and Selenium automation testing using Python. Strong
@@ -676,6 +676,22 @@
         Panitia penyelenggaraan acara LDKM (Latihan Dasar Kepemimpinan Mahasiswa) tahun
         2018 <br> </dd> </dl> </div> </section> -->
 
+        <!-- MODAL PREVIEW CV -->
+        <div class="modal fade" id="atsModal">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-body p-0">
+                        <iframe
+                            src="https://rhmt-hidayat.github.io/resume-qa/cv-ats.pdf"
+                            width="100%"
+                            height="700px">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END MODAL -->
+
         <!-- MODAL IMAGE PROJECT -->
         <div class="modal fade" id="imageModal" tabindex="-1">
             <div class="modal-dialog modal-xl modal-dialog-centered">
@@ -1009,9 +1025,7 @@
             </div>
         </footer>
 
-        <!-- Optional JavaScript -->
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-
         <script
             src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
